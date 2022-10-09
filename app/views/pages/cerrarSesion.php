@@ -1,0 +1,4 @@
+<?php
+    UserSession::closeSession();
+    redireccionar('');
+?>

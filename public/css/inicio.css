@@ -1,0 +1,76 @@
+.dashboard{
+    transform: scale(0.9);
+    margin-top: -3rem;
+}
+
+.dashboard .usuarios-activos,
+.dashboard .ventas-realizadas,
+.dashboard .horarios,
+.dashboard .reloj{
+    height: 130px;
+}
+
+.dashboard .reports .otros-reportes{
+    height: 373px;
+}
+
+.dashboard .reports .otros-reportes div button{
+    width: 220px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashboard .reports .otros-reportes .botones-reporte-1 button:first-child{
+    background-color: rgb(172, 224, 226);
+    color: rgb(46, 184, 189);
+    border: none;
+}
+
+.dashboard .reports .otros-reportes .botones-reporte-1 button:last-child{
+    background-color: rgb(226, 172, 172);
+    color: rgb(189, 46, 46);
+    border: none;
+}
+
+
+.dashboard .reports .otros-reportes .botones-reporte-2 button:first-child{
+    background-color: rgb(172, 226, 172);
+    color: rgb(46, 189, 89);
+    border: none;
+}
+
+.dashboard .reports .otros-reportes .botones-reporte-2 button:last-child{
+    background-color: rgb(222, 226, 172);
+    color: rgb(189, 187, 46);
+    border: none;
+}
+
+.dashboard .usuarios-activos,
+.dashboard .ventas-realizadas,
+.dashboard .horarios,
+.dashboard .reloj,
+.dashboard .reports .ventas-mensuales,
+.dashboard .reports .otros-reportes{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.226);
+}
+
+.dashboard .data .reloj-fun{
+	font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dashboard .data .reloj-fun p{
+	padding-left: 10px;
+} 
+
+.dashboard .data .reloj-fun .caja-segundos{
+    display: inline-block;
+}
+
+.reloj-fun .segundos,
+.reloj-fun .ampm{
+    font-size: 16px;
+    display: block;
+}

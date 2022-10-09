@@ -1,0 +1,183 @@
+:root{
+    font-size: 16px;
+    --color-titulo: rgb(35, 41, 131);
+    --color-encabezado: rgb(122, 150, 189);
+    --label-error: crimson;
+}
+
+.facturacion .nav-item{
+    padding: 0 5px;
+    width: 11rem;
+    text-align: center;
+}
+
+.facturacion .pestaña{
+    color:rgb(62, 70, 187);
+    font-weight: bold;
+    border-radius: 0;
+    background-color: transparent;
+    outline: 1px solid rgba(131, 131, 131, 0.363);
+    box-shadow: 0 2px 5px rgba(34, 34, 34, 0.555);
+    pointer-events: none;
+    cursor: default;
+
+}
+
+.facturacion .pestaña.active{
+    background-color: var(--color-titulo) !important;
+    color: white !important;
+    transition: all .3s ease;
+}
+
+.facturacion .pestaña.active.show{
+    background-color: var(--color-titulo);
+    color: white;
+    outline: var(--color-titulo);;
+}
+
+.facturacion .pestaña.active{
+    background: rgba(116, 114, 114, 0.514);
+}
+
+.facturacion .facturar-contenido{
+    padding: 2rem 0;
+}
+
+
+/*  --------------------- AGREGAR BOLETOS --------------------------    */
+
+.facturacion .ingresar-boletos-form .input-agregar-boleto{
+    width: 21rem;
+}
+
+.facturacion .ingresar-boletos-form .btn-agregar-boleto .slide,
+.facturacion .btn-opciones-facturacion button{
+    color: rgb(62, 70, 187);
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid rgb(62, 70, 187);
+    border-radius: 0;
+    padding: 7px 26px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(62, 70, 187);;
+    -webkit-transition: ease-out 0.8s;
+    -moz-transition: ease-out 0.8s;
+    transition: ease-out 0.4s;
+}
+
+.facturacion .btn-opciones-facturacion button:first-child{
+    display: none;
+}
+
+.facturacion .ingresar-boletos-form .btn-agregar-boleto .slide:hover,
+.facturacion .btn-opciones-facturacion button:last-child:hover{
+    box-shadow: inset 400px 0 0 0 rgb(62, 70, 187);;
+    color: white;
+}
+
+.facturacion .btn-opciones-facturacion button:first-child:hover{
+    box-shadow: inset -400px 0 0 0 rgb(62, 70, 187);;
+    color: white;
+}
+
+.facturacion .ingresar-boletos-form .btn-agregar-boleto .slide:focus,
+.facturacion .btn-opciones-facturacion button:focus{
+    outline: none;
+}
+
+.facturacion .ingresar-boletos-form .btn-agregar-boleto .slide:active,
+.facturacion .btn-opciones-facturacion button:active{
+    filter: opacity(50%);
+}
+
+.facturacion .tabla-boletos table{
+    width: 75%;
+}
+
+/*  --------------------- FIN - AGREGAR BOLETOS --------------------------    */
+
+
+
+/*  --------------------- HOJA DATOS FISCALES --------------------------    */
+
+.facturacion .hoja{
+    background-color: rgba(255, 255, 255);
+    width: 600px;
+    min-height: 600px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.facturacion .encabezado-hoja{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--color-encabezado);
+}
+
+.facturacion .hoja .encabezado-hoja .SAT{
+    width: 60px;
+}
+
+.facturacion .hoja .encabezado-hoja .logo-hoja img{
+    width: 50px;
+}
+
+.facturacion .hoja .encabezado-hoja .logo-hoja span{
+    text-transform: uppercase;
+    color: white;
+}
+
+.facturacion .hoja .titulo-hoja{
+    color: var(--color-titulo);
+}
+
+.facturacion .hoja .divisor{
+    width: 85%;
+    border-top: 1px solid black;
+}
+
+.facturacion .hoja .facturar-form input,
+.facturacion .ingresar-boletos-form input{
+    background-color: transparent !important;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid rgb(46, 54, 172);
+    background: none;
+    padding: 0 5px 0 5px;
+}
+
+/* CLASES ACTIVO Y ERROR */
+.facturacion .hoja .facturar-form .form-control:focus,
+.facturacion .hoja .facturar-form .form-control:active,
+.facturacion .ingresar-boletos-form .form-control:focus,
+.facturacion .ingresar-boletos-form .form-control:active{
+    box-shadow: none !important;
+    border-bottom: 2px solid blue;
+}
+
+.facturacion .hoja .facturar-form .error,
+.facturacion .ingresar-boletos-form .error{
+    border-bottom: 2px solid rgb(187, 30, 30);
+}
+
+.facturacion .hoja .facturar-form label,
+.facturacion .ingresar-boletos-form label{
+    position: absolute;
+}
+
+.facturacion .hoja .facturar-form .label,
+.facturacion .ingresar-boletos-form .label{
+    color: var(--color-titulo);
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: all .3s ease;
+}
+
+.facturacion .activo{
+    margin-top: -20px !important;
+}
+
+/*  --------------------- FIN - HOJA DATOS FISCALES --------------------------    */

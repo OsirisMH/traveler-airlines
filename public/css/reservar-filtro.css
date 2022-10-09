@@ -1,0 +1,117 @@
+@font-face{
+    font-family: averta;
+    src: url(/traveler-airlines/public/fonts/Averta/WEB/AvertaDemoPE-Regular.woff);
+}
+
+:root{
+    font-size: 16px;
+    --color-botones-primario: #222c69;
+}
+
+main{
+    font-family: averta;
+}
+
+main .busqueda{
+    border-radius: 2px;
+    margin-top: 24px;
+}
+
+main .busqueda .titulo{
+    color: #333e81;
+    border-bottom: 8px double #333e81;
+}
+
+main .busqueda .titulo h2{
+    font-weight: 800;
+}
+
+main .busqueda .tipoVuelo span,
+main .busqueda .cantidadPasajeros span,
+main .busqueda .from-to label,
+main .busqueda .fecha label{
+    padding: 0 .1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main .busqueda .tipoVuelo .botones{
+    width: 20rem;
+}
+
+main .busqueda .tipoVuelo .botones button{
+    margin-right: 0.5rem;
+}
+
+main .busqueda .tipoVuelo .botones button.active{
+    background: var(--color-botones-primario);
+}
+
+/* main .busqueda .cantidadPasajeros .inputs{
+ 
+} */
+
+main .busqueda .cantidadPasajeros .inputs button,
+main .busqueda .tipoVuelo .botones button,
+main .busqueda .from-to select,
+main .busqueda .fecha input,
+main .busqueda .boton button{
+    color: var(--color-botones-primario);
+    border-color: var(--color-botones-primario);
+}
+
+main .busqueda .cantidadPasajeros .inputs button:hover,
+main .busqueda .tipoVuelo .botones button:hover,
+main .busqueda .boton button:hover{
+    background-color: var(--color-botones-primario);
+    border-color: var(--color-botones-primario);
+    color: #fff;
+}
+
+main .busqueda .cantidadPasajeros .inputs button .focus,
+main .busqueda .cantidadPasajeros .inputs button:focus,
+main .busqueda .tipoVuelo .botones button.focus,
+main .busqueda .tipoVuelo .botones button:focus,
+main .busqueda .from-to select:focus,
+main .busqueda .fecha input:focus{
+    box-shadow: 0 0 0 0.1rem rgba(1, 30, 192, 0.5) !important;
+}
+
+main .busqueda .boton button:active{
+    background-color: var(--color-botones-primario) !important;
+    border-color: var(--color-botones-primario);
+    color: #fff;
+    box-shadow: 0 0 0 0.1rem rgba(1, 30, 192, 0.5) !important;
+}
+
+main .busqueda .cantidadPasajeros .inputs input{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+main .busqueda .cantidadPasajeros .inputs input:focus{
+    box-shadow: none !important;
+}
+
+main .busqueda .cantidadPasajeros .inputs input:read-only{
+    background-color: rgb(247, 247, 247);
+    font-weight: bold;
+}
+
+main .busqueda .from-to{
+    padding: 2rem 0;
+}
+
+main .busqueda .from-to select{
+    width: 75%;
+    font-size: 1.1rem;
+}
+
+main .busqueda .fecha input{
+    height: 2.5rem;
+    width: 75%;
+}
+
+main .busqueda .boton{
+    padding-bottom: 2rem;
+}

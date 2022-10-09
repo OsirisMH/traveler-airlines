@@ -1,0 +1,96 @@
+@font-face{
+    font-family: averta;
+    src: url(/traveler-airlines/public/fonts/Averta/WEB/AvertaDemoPE-Regular.woff);
+}
+
+:root{
+    font-size: 16px;
+    --color-primario-r: #253083;
+}
+
+main{
+    font-family: averta;
+}
+
+main .datos-pasajeros .titulo{
+    background-color: var(--color-primario-r);
+}
+
+main .datos-pasajeros .btnContinuar button{
+    width: 15rem;
+    color: var(--color-primario-r);
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid var(--color-primario-r);
+    border-radius: 0;
+    padding: 7px 26px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--color-primario-r);
+    -webkit-transition: ease-out 0.8s;
+    -moz-transition: ease-out 0.8s;
+    transition: ease-out 0.4s;
+}
+
+main .datos-pasajeros .btnContinuar button:hover{
+    box-shadow: inset 400px 0 0 0 var(--color-primario-r);
+    color: white;
+}
+
+main .datos-pasajeros .btnContinuar button:focus{
+    outline: none;
+}
+
+
+main .datos-pasajeros .linea-titulo{
+    border-top: 10px double var(--color-primario-r);
+}
+
+main .datos-pasajeros .errorMensaje{
+    color: rgb(199, 20, 20);
+    font-size: 1.2rem;
+}
+
+main .datos-pasajeros .accordion .card .pasajero button{
+    color: var(--color-primario-r);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+main .datos-pasajeros .accordion .card .pasajero button:focus{
+    box-shadow: none;
+}
+
+main .datos-pasajeros .txtNombre label,
+main .datos-pasajeros .txtApellido label,
+main .datos-pasajeros .txtFechaNacimiento label,
+main .datos-pasajeros .txtSexo legend,
+main .datos-pasajeros .txtSexo label,
+main .datos-pasajeros .txtTelefono label,
+main .datos-pasajeros .txtCorreo label,
+main .datos-pasajeros .selectPuesto label,
+main h3, h4, h5{
+    color: var(--color-primario-r);
+}
+
+main .datos-pasajeros .txtNombre input,
+main .datos-pasajeros .txtApellido input,
+main .datos-pasajeros .txtFechaNacimiento input,
+main .datos-pasajeros .txtTelefono input,
+main .datos-pasajeros .txtCorreo input,
+main .datos-pasajeros .selectPuesto select{
+    background-color: transparent;
+    background: none;
+    border-color: var(--color-primario-r);
+}
+
+main .datos-pasajeros .txtNombre input:focus,
+main .datos-pasajeros .txtApellido input:focus,
+main .datos-pasajeros .txtFechaNacimiento input:focus,
+main .datos-pasajeros .txtTelefono input:focus,
+main .datos-pasajeros .txtCorreo input:focus,
+main .datos-pasajeros .selectPuesto select:focus{
+    box-shadow: 0 0 0 0.1rem rgba(1, 30, 192, 0.5) !important;
+}

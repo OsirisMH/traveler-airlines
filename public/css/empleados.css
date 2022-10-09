@@ -1,0 +1,68 @@
+@font-face{
+    font-family: averta;
+    src: url(/traveler-airlines/public/fonts/Averta/WEB/AvertaDemoPE-Regular.woff);
+}
+
+:root{
+    font-size: 16px;
+    --color-primario-r: #253083;
+}
+
+main{
+    font-family: averta;
+}
+
+main .form-inline input{
+    background-color: transparent;
+    background: none;
+    border-color: var(--color-primario-r);
+}
+
+main .form-inline input:focus{
+    box-shadow: 0 0 0 0.1rem rgba(1, 30, 192, 0.5) !important;
+}
+
+main .scrollable table thead th{
+    border: none;
+}
+
+.tableFixHead          { overflow-y: auto; height: 400px; }
+.tableFixHead thead th { position: sticky; top: 0; }
+
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 10px 16px; }
+th     { background:var(--color-primario-r);  color: white;}
+
+main .scrollable::-webkit-scrollbar {
+    width: 0.5rem;
+}
+  
+main .scrollable::-webkit-scrollbar-track {
+    background: #004990;
+}
+  
+main .scrollable::-webkit-scrollbar-thumb {
+    background: #4e65eb;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+main #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--color-primario-r);
+    background-color: transparent;
+    border-color: transparent transparent #ffffff;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+main .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: var(--color-primario-r);
+    font-size: 16px;
+    font-weight: 600;
+}
+main .nav-link:hover {
+    border: none;
+}

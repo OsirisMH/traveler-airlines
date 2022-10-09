@@ -1,0 +1,89 @@
+@font-face{
+    font-family: averta;
+    src: url(/traveler-airlines/public/fonts/Averta/WEB/AvertaDemoPE-Regular.woff);
+}
+
+:root{
+    font-size: 16px;
+    --ckin_ColorPrincipal: rgb(73, 79, 175);
+    --ckin_ColorSecundario: rgb(37, 27, 94);
+}
+
+main{
+    font-family: averta;
+}
+
+main .contenedor{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+main .contenedor .carta .cara{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+main .contenedor .carta .cara.cara1{
+    position: relative;
+    background-color: var(--ckin_ColorPrincipal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+main .contenedor .carta:hover .cara.cara1{
+    background-color: var(--ckin_ColorSecundario);
+    transform: translateY(0);
+}
+
+main .contenedor .carta .cara .contenido{
+    opacity: 1;
+    transition:0.5s;
+}
+
+main .contenedor .carta:hover .cara .contenido{
+    opacity: 1;
+}
+
+main .contenedor .carta .cara .contenido img{
+    max-width: 100px;
+}
+
+main .contenedor .carta .cara .contenido h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main .contenedor .carta .cara.cara2{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgba(5,18,28.568);
+    transform: translateY(-100px);
+}
+
+main .contenedor .carta:hover .cara.cara2{
+    transform: translateY(0);
+}
+
+main .contenedor .carta .cara.cara2 .contenido p{
+    margin: 0;
+    padding: 0;
+
+}
+
+main .contenedor img{
+    width: 220px;
+}

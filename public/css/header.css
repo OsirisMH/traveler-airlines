@@ -1,0 +1,62 @@
+.cabecera{
+  min-height: 70px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+  background-color: #1b2870;
+}
+
+.cabecera .menu-obj{
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecera .menu-obj .nombre-empresa span{
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 10px;
+}
+
+.cabecera .perfil{
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecera .perfil a{
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.cabecera .perfil .boton ,.cabecera .perfil .boton:hover, .cabecera .perfil .boton:focus, .cabecera .perfil .boton:active{
+  background-color: transparent !important;
+  border: 1px solid transparent !important;
+  color:white !important;
+}
+
+.cabecera .perfil a span:hover{
+  text-decoration: underline !important;
+}
+
+.cabecera .perfil a:focus{
+  box-shadow: none !important;
+}
+
+.dropdown-menu a{
+  color: black !important;
+}
+
+.dropdown-menu a:hover{
+ background-color: #eeeeee !important;
+}
+
+.cabecera .perfil img{
+  width: 45px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2px;
+  margin-left: 5px;
+}
